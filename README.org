@@ -5,10 +5,38 @@
 
 * [[http://progit.org/book/][pro-git]] [0/11]
 
-*** TODO 1) Getting Started [0/7]
-***** TODO 1.1 - About Version Control
-***** TODO 1.2 - A Short History of Git
-***** TODO 1.3 - Git Basics
+*** TODO 1) Getting Started [3/7]
+***** DONE 1.1 - About Version Control
+      CLOSED: [2011-08-07 Sun 19:59]
+
+******* L : what are 4 big evolutions of version control, with their drawbacks ?
+
+        - Manual VCS (Version Control System): Copy backup files to
+          timestamped directories
+          - cons: error prone
+        - Local VCS: tool that keep all
+          changes in a local database
+          - cons: How to collaborate with other people? 
+        - Centralized VCS (CVCS): Allow collaboration
+          - cons: single point of failure
+        - Distributed VCS (DVCS): Complete repository is on each
+          clients: if any of the client loses its data: it's keept on
+          all other clients
+          - pros: more flexible, allows differents workflows for the
+            same project, eg hiearchical models which are not possible
+            with CVCS
+
+***** DONE 1.2 - A Short History of Git
+      CLOSED: [2011-08-07 Sun 20:00]
+***** DONE 1.3 - Git Basics
+      CLOSED: [2011-08-07 Sun 20:08]
+******* ??? : I don't understand the difference between, thinking of data as deltas, or thinking of data as snapshots (like git does)
+        ???
+******* L : advantages of git ? 
+        - almost every operation is local : you can be offline
+        - integrity : everything checksumed cryptographically (sha-1)
+        - your data is safe: almost all git does is add data, so it's
+          difficult do lose data
 ***** TODO 1.4 - Installing Git
 ***** TODO 1.5 - First-Time Git Setup
 ***** TODO 1.6 - Getting Help
